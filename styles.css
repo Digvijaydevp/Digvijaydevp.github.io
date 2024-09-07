@@ -55,8 +55,12 @@ header {
 }
 
 .logo:hover{
-  color: var(--main-color);
+  color: cyan;
   transform: scale(1.05);
+}
+
+.strikethrough {
+  text-decoration: line-through;
 }
 
 .navbar a{
@@ -69,9 +73,9 @@ header {
 }
 
 .navbar a:hover{
-  color: var(--main-color);
+  color: cyan;
   font-size: 2.3rem;
-  border-bottom: 3px solid var(--main-color);
+  border-bottom: 3px solid cyan;
 }
 
 section {
@@ -104,7 +108,7 @@ section {
 }
 
 .home-img img{
-  width: 28vh;
+  width: 32vh;
   border-radius: 50%;
   box-shadow: 0 0 15px var(--main-color);
   transition: 0.4s ease-in-out;
@@ -149,7 +153,7 @@ section {
 }
 
 .about-img img{
-  width: 24vh;
+  width: 30vh;
   border-radius: 50%;
   box-shadow: 0 0 25px var(--main-color);
   transition: 0.4s ease-in-out;
@@ -161,23 +165,24 @@ section {
   0 0 60px var(--main-color);
 }
 
-.aboutMe-content h2{
-  font-size: 7rem;
-  text-align: left;
+.aboutMe-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .aboutMe-content h2{
-  font-size: 6rem;
+  font-size: 5.7rem;
   text-align: left;
 }
 
 .aboutMe-content p {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .btn {
-  display: inline-block;
-  padding: 1rem 3rem;
+  display: flex-start;
+  padding: 1rem 2rem;
   background-color: var(--main-color);
   box-shadow: 0 0 25px var(--main-color);
   border-radius: 3rem;
@@ -302,7 +307,9 @@ section {
 
 .education .content .desc {
   display: flex;
+  flex-direction: column;
   font-size: 2rem;
+  align-items: center;
   justify-content: center;
 }
 
