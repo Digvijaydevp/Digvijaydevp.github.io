@@ -91,11 +91,16 @@ section {
   flex-direction: column;
 }
 
-.home-content h1{
-  font-size: 8rem;
+.home-content h3{
+  font-size: 5rem;
   font-weight: 700;
   margin-top: 1.5rem;
-  line-height: 1.8;
+  line-height: 1.2;
+}
+
+.home-content p{
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .home-img img{
@@ -161,13 +166,13 @@ section {
   text-align: left;
 }
 
-.about-content h2{
-  font-size: 7rem;
+.aboutMe-content h2{
+  font-size: 6rem;
   text-align: left;
 }
 
-.about-content p {
-  font-size: 1.8rem;
+.aboutMe-content p {
+  font-size: 2rem;
 }
 
 .btn {
@@ -203,7 +208,7 @@ section {
 
 .education .timeline {
   position: relative;
-  max-width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -238,7 +243,7 @@ section {
   border: 4px solid var(--main-color);
   top: 15px;
   border-radius: 50%;
-  z-index: 100;
+  z-index: 200;
   font-size: 1.9rem;
   text-align: center;
   font-weight: 600;
@@ -272,10 +277,10 @@ section {
   top: 22px;
   width: 0;
   z-index: 1;
-  right: 30px;
+  left: 30px;
   border: medium solid var(--main-color);
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent var(--main-color);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--main-color) transparent transparent;
 }
 
 .education .right::after {
@@ -289,9 +294,16 @@ section {
 }
 
 .education .content .tag {
+  display: flex;
   font-size: 1.5rem;
   padding-top: 1.5rem;
-  padding-left: 1.5rem;
+  justify-content: center;
+}
+
+.education .content .desc {
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
 }
 
 .projects{
@@ -356,9 +368,11 @@ section {
 .footer{
   background-color: var(--second-bg-color);
   padding: 50px 0;
+  align-items: center;
 }
 .footer .socials{
   text-align: center;
+  justify-content: center;
 }
 
 .footer ul{
